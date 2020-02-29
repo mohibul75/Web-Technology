@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Html Class</title>
+        <style>
+            .color-red{
+            color:#F00;
+        }
+        .color-green{
+            color: green;
+        }
+
+        .color-blue{
+            color:blue
+        }
+        </style>
+     </head>
+        <body >
+            <h1 id="myheading">This is a simple heading</h1>
+            <button onclick="red()">RED</button>
+            <button onclick="blue()">GREEN</button>
+            <button onclick="green()">BLUE</button>
+
+            <script> 
+                function red(){
+
+                   document.getElementById('myheading').className="color-red";
+                  // document.getElementById('myheading').style.color='red';
+                }
+
+                function blue(){
+
+                        document.getElementById('myheading').className="color-green";
+                      //document.getElementById('myheading').style.color='blue';
+                }
+                function green(){
+
+                        document.getElementById('myheading').className="color-blue";
+
+                }
+		    </script>
+        </body>
+   
+</html>
